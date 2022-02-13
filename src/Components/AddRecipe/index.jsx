@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import RecipeList from "../RecipeList";
 import { WrapperAddRecipe } from "./recipe.style";
 
 const AddRecipe = ({ recipesArray }) => {
 
   const [quantit, setQuantity] = useState(0);
 
-  const [ingredient, setIngredient] = useState(recipesArray);
 
 
   const increateQuantity = () => {
@@ -16,6 +16,7 @@ const AddRecipe = ({ recipesArray }) => {
     setQuantity(quantit - 1);
   };
 
+  
 
 
   return (
@@ -57,7 +58,7 @@ const AddRecipe = ({ recipesArray }) => {
         <label htmlFor="">Ingredient List</label> <br />
         <div className="items_added">
           <ul>
-            <li>{ingredient}</li>
+            <li>aqui</li>
           </ul>
         </div>
         </div>
@@ -68,7 +69,7 @@ const AddRecipe = ({ recipesArray }) => {
         </div>
       </div>
       <button >Add ingredient</button>
-
+    <RecipeList />
     </WrapperAddRecipe>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import { WrapperCards } from './cards.styles'
-import '../Cards/card.css';
+import './card.css';
 import { Link } from 'react-router-dom';
 
 const Cards = () => {
