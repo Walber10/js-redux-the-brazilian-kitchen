@@ -1,0 +1,7 @@
+.card_left{
+    background-image: url("../../Resources/recipe.png");
+ }
+
+ .card_right{
+    background-image: url("../../Resources/pantry.png");
+ }

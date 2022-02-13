@@ -1,11 +1,22 @@
 import React from 'react'
+import { WrapperCards } from './cards.styles'
+import '../Cards/card.css';
 
-const index = () => {
+const Cards = () => {
   return (
-    <div>
-        
+    <WrapperCards>
+    <div className='cards_container'>
+        <div className="card card_left">
+        <button>New Recipe</button>
+        </div>
+
+        <div className="card card_right">
+          <button>Add items</button>
+          </div>
     </div>
+    </WrapperCards>
+
   )
 }
 
-export default index
+export default Cards
