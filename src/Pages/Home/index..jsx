@@ -9,7 +9,10 @@ const Home = () => {
     </h1>
     <p>Cook the best Brazilian recipes</p>
     </div>
+    <div className="card_container">
     <Cards />
+
+    </div>
   </WrapperHome>
 };
 

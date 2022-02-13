@@ -1,0 +1,9 @@
+nav {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../Resources/background_navbar.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+
+}

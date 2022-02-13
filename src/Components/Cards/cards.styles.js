@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const WrapperCards = styled.div`
+  margin: 0px 0px 80px 0px;
+  i {
+      color: black;
+      font-size: 30px
+  }
   .cards_container {
     display: flex;
     .card {
@@ -16,7 +21,7 @@ export const WrapperCards = styled.div`
     .card_left {
       background-size: cover;
       border: none;
-
+      margin: 0px 20px 0px 0px;
       button {
         color: var(--card-recipe);
       }
@@ -24,6 +29,7 @@ export const WrapperCards = styled.div`
 
     .card_right {
       background-size: cover;
+      margin: 0px 0px 0px 20px;
       border: none;
       button {
         color: var(--card-pantry);
@@ -31,7 +37,7 @@ export const WrapperCards = styled.div`
     }
 
     button {
-        font-family: var(--bodyFont);
+      font-family: var(--bodyFont);
       font-size: 20px;
       font-weight: 600;
       width: 165px;
