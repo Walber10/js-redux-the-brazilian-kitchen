@@ -7,3 +7,11 @@ nav {
     height: 80vh;
 
 }
+
+.navbar_pantry {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../Resources/navbar_pantry.png');
+    background-repeat: no-repeat;
+    height: 80vh;
+}

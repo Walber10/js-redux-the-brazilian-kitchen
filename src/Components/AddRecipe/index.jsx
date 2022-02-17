@@ -6,8 +6,6 @@ const AddRecipe = ({ recipesArray }) => {
 
   const [quantit, setQuantity] = useState(0);
 
-
-
   const increateQuantity = () => {
     setQuantity(quantit + 1);
   };
@@ -15,8 +13,6 @@ const AddRecipe = ({ recipesArray }) => {
   const decreaseQuantity = () => {
     setQuantity(quantit - 1);
   };
-
-  
 
 
   return (

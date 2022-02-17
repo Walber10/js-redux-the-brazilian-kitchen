@@ -16,8 +16,16 @@ const Header = () => {
           </div>
         </nav>
       )}
+
+{pathname === "/pantry" && (
+        <main className="navbar_pantry">
+          <div className="container">
+            <Logo />
+          </div>
+        </main>
+      )}
     </>
-  );
+  )
 };
 
 export default Header;
