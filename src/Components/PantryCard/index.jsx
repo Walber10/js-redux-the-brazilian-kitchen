@@ -1,18 +1,7 @@
-import { useState } from "react";
+
 import { WrapperPantry } from "./pantry.style";
 
-const PantryCard = ({name, quantity}) => {
-  const [quantit, setQuantity] = useState(0);
-
-  const increateQuantity = () => {
-    setQuantity(quantit + 1);
-  };
-
-  const decreaseQuantity = () => {
-    setQuantity(quantit - 1);
-  };
-
-
+const PantryCard = ({ name, quantity, increateQuantity, decreaseQuantity } ) => {
 
   return (
     <WrapperPantry>
@@ -24,7 +13,7 @@ const PantryCard = ({name, quantity}) => {
         <p>{quantity}</p>
         <i className="fas fa-plus" onClick={increateQuantity}></i>
       </div>
-      </WrapperPantry>
+    </WrapperPantry>
   );
 };
 

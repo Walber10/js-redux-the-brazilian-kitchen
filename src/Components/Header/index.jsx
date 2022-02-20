@@ -5,7 +5,6 @@ import "../Header/header.css";
 
 const Header = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <>
       <div className="container">{pathname === "/" && <Logo />}</div>
@@ -17,7 +16,7 @@ const Header = () => {
         </nav>
       )}
 
-{pathname === "/pantry" && (
+      {pathname === "/pantry" && (
         <main className="navbar_pantry">
           <div className="container">
             <Logo />
@@ -25,7 +24,7 @@ const Header = () => {
         </main>
       )}
     </>
-  )
+  );
 };
 
 export default Header;

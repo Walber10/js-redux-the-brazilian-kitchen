@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const WrapperAddRecipe = styled.section`
+   input {
+      padding: 20px;
+    }
   margin: 0px 0px 80px 0px;
   button {
     margin-top: 64px;
@@ -38,6 +41,14 @@ export const WrapperAddRecipe = styled.section`
       border: 1px solid #c5c6c6;
       height: 219px;
       border-radius: 26px;
+      overflow: auto;
+      padding: 15px 0px 15px 0px;
+      ul {
+        list-style-type: none;
+        li {
+          display: flex;
+        }
+      }  
     }
     button {
       margin-top: 10px;
@@ -47,7 +58,11 @@ export const WrapperAddRecipe = styled.section`
       background-color: var(--add-ingredient);
       border-radius: 33px;
     }
+
     .how_cook {
+      textarea {
+        padding: 20px;
+      }
       textarea {
         border: 1px solid #c5c6c6;
         height: 219px;

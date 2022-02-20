@@ -7,13 +7,11 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import recipesReducer from "./Features/Recipe";
 
-
 const store = configureStore({
   reducer: {
     recipes: recipesReducer,
   },
 });
-
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,29 +1,29 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 import { RecipeListing } from "../Components/ShareData/index";
+import { itemsInPantry } from "../Components/ShareData/PantryData";
 
 export const recipeSlice = createSlice({
-  name: "recipes",
-  initialState: { value: RecipeListing },
+  name: "kitchen",
+  initialState: { valueRecipe: RecipeListing, valuePantry: itemsInPantry },
   reducers: {
     addrecipe: (state, action) => {
-      state.value.push(action.payload);
+      state.valueRecipe.push(action.payload);
+    },
+
+    addIngredient: (state, action) => {
+      state.valuePantry.push(action.payload);
     },
 
     deleterecipe: (state, action) => {
-      state.value = state.value.filter((recipe) => recipe.id !== action.payload.id);
+      state.valueRecipe = state.valueRecipe.filter(
+        (recipe) => recipe.id !== action.payload.id
+      );
     },
 
-    updaterecipename: (state, action) => {
-      // eslint-disable-next-line array-callback-return
-      state.value.map((recipe) => {
-        if (recipe.id === action.payload.id) {
-          recipe.recipename = action.payload.recipename;
-        }
-      });
-    },
   },
 });
 
-export const { addrecipe, deleterecipe, updaterecipename } = recipeSlice.actions;
+
+export const { addrecipe, deleterecipe, updaterecipename, addIngredient } =
+  recipeSlice.actions;
 export default recipeSlice.reducer;
